@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Computer Science student portfolio showcasing projects and skills">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Jeff Huhtua">
     <title>My Portfolio - Home</title>
     
     <!-- link tag for future CSS -->
@@ -16,27 +16,31 @@
         main {
             border: 1px solid #ccc;
         }
+        /* Custom semantic CSS element */
         info-box {
-        display: block;
-        padding: 15px;
-        margin: 20px 0;
-        border: 2px solid #0066cc;
-        border-radius: 5px;
-        background-color: #e6f2ff;
-    }
-    
-    info-box::before {
-        content: "ℹ️ ";
-        font-weight: bold;
-    }
+            display: block;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #0066cc;
+            border-radius: 5px;
+            background-color: #e6f2ff;
+        }
+        
+        info-box::before {
+            content: "ℹ️ ";
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
+        <h1>Jeff Huhtua</h1>
         <p><strong>Computer Science Student</strong> | <em>Web Developer</em></p>
     </header>
+    
+    <!-- Hello World custom element - logs to console only -->
     <hello-world id="greeting"></hello-world>
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -54,6 +58,11 @@
             <br>
             <p>This site showcases my <i>projects</i>, skills, and experience.</p>
             
+            <!-- ADD THIS: Custom info-box element -->
+            <info-box>
+                This is the custom semantic element.
+            </info-box>
+            
             <button type="button">View My Projects</button>
         </section>
 
@@ -62,14 +71,14 @@
             <article>
                 <h3>Project Name</h3>
                 <p>Brief description of the project.</p>
-                <a href="Project.html">View Projects</a>
+                <a href="Project.html">Learn more</a>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>Contact: <a href="mailto:your.email@example.com">jeff.huhtua@gmail.com</a></p>
+        <p>&copy; 2025 Jeff Huhtua. All rights reserved.</p>
     </footer>
 
     <!-- noscript tag -->
@@ -79,14 +88,14 @@
 
     <!-- script tag placeholder -->
     <script>
+        // Hello World custom element - logs to console
         class HelloWorld extends HTMLElement {
-        connectedCallback() {
-            console.log("Hello World! This custom element has been added to the page.");
-            console.log("Element ID:", this.id || "No ID provided");
+            connectedCallback() {
+                console.log("Hello World!");
+            }
         }
-    }
-    
-    customElements.define('hello-world', HelloWorld);
+        
+        customElements.define('hello-world', HelloWorld);
     </script>
 </body>
 </html>
