@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>A showcase of my work and accomplishments</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Featured Projects</h2>
+            
+            <!-- Project 1 -->
+            <article>
+                <h3>Portfolio Website</h3>
+                <img src="images/project1.jpg" alt="Portfolio website screenshot" width="300">
+                <p>A responsive personal portfolio built with <strong>HTML5</strong> and <em>CSS3</em>.</p>
+                <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+                
+            </article>
+
+            <br>
+
+            <!-- Project 2 -->
+            <article>
+                <h3>Task Manager App</h3>
+                <img src="images/project2.jpg" alt="Task manager app screenshot" width="300">
+                <p>A task management application with <i>local storage</i> support.</p>
+                <p><b>Technologies:</b> React, Node.js, MongoDB</p>
+                
+            </article>
+
+            <br>
+
+            <!-- Project 3 -->
+            <article>
+                <h3>Weather Dashboard</h3>
+                <img src="images/project3.jpg" alt="Weather dashboard screenshot" width="300">
+                <p>Real-time weather information using external APIs.</p>
+                <p><b>Technologies:</b> JavaScript, REST API, HTML/CSS</p>
+                
+            </article>
+        </section>
+
+        <!-- Dialog element (modal) - IMPORTANT: This is the last missing required tag! -->
+        <section>
+            <h2>Want to collaborate?</h2>
+            <button onclick="document.getElementById('projectDialog').showModal()">
+                Open Contact Dialog
+            </button>
+
+            <dialog id="projectDialog">
+                <h3>Let's Work Together!</h3>
+                <p>I'm always interested in new projects and collaborations.</p>
+                <form method="dialog">
+                    <button type="submit">Close</button>
+                </form>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <noscript>
+        <p>JavaScript is disabled. Some interactive features may not work.</p>
+    </noscript>
+</body>
+</html>
